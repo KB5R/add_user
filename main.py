@@ -133,7 +133,7 @@ def __read_file():
 
             mail_name = split[3]
 
-            title_name = split[4]
+            title_name = split[4] if len(split) >= 5 else ""
 
             result = (format_lastname + ":" + format_firstname + ":" + login_lastname.lower() + "." + login_firstname.lower() + ":" + title_name  + ":" + mail_name )
 
